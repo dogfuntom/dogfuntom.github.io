@@ -1,0 +1,26 @@
+<!doctype html>
+
+<html lang="{{ language }}">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ title }}</title>
+    <link href="/main.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if description %}
+      <meta name="description" content="{{ description }}">
+    {% endif %}
+    {# <link rel="icon"
+      href="data:image/svg+xml,{{ favicon | urlencode }}"> #}
+  </head>
+
+  <body>
+    <header>
+      <h1>{{ title }}</h1>
+    </header>
+    <main>
+      <article>
+        {{ content | safe }}
+      </article>
+    </main>
+  </body>
+</html>

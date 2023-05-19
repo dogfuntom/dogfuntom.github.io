@@ -1,0 +1,62 @@
+html {
+  --background: #ffffff;
+  --foreground: #3b3b3b;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --background: #1f1f1f;
+    --foreground: #cccccc;
+  }
+  a:link {
+    color: #58a6ff
+  }
+
+  a:visited {
+    color: #8e96f0
+  }
+}
+
+html {
+  max-width: 83ch;
+  padding: 3em 1em;
+  margin: auto;
+  line-height: 1.75;
+  font-size: 1.25em;
+  font-family:
+    "Segoe UI Web (West European)", "Segoe UI",
+    -apple-system,
+    BlinkMacSystemFont,
+    Roboto,
+    "Helvetica Neue", "Helvetica",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 3em 0 1em;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+p,
+ul,
+ol {
+  margin-bottom: 2em;
+}

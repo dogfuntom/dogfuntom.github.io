@@ -1,0 +1,21 @@
+{
+  "deno.enable": true,
+  "deno.unstable": true,
+  "deno.lint": true,
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "cSpell.language": "en,ru",
+  "markdown.occurrencesHighlight.enabled": true,
+  "markdown.validate.enabled": true,
+  "markdown.preferredMdPathExtensionStyle": "removeExtension",
+  "markdown.preview.typographer": true,
+  "markdown.updateLinksOnFileMove.enabled": "prompt",
+  "markdown.validate.fileLinks.enabled": "ignore",
+  "cSpell.words": [
+    "lume",
+    "oklab"
+  ],
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  }
+}
