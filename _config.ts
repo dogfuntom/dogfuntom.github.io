@@ -13,7 +13,6 @@ site.copy('img', 'images')
 // Copy the content of "assets" directory to the root
 site.copy('assets', '.')
 
-site.ignore('/docs/')
-site.ignore('README.md')
+site.ignore('docs')
 
 export default site
