@@ -1,0 +1,16 @@
+# Source: https://github.com/DavidAnson/markdownlint/blob/b2305efafb034b1f328845aec9928b5363ffd646/style/cirosantilli.json
+comment: Rules for the style guide at https://www.cirosantilli.com/markdown-style-guide/,
+
+default: true
+MD003:
+  style: atx
+MD004:
+  style: dash
+MD007:
+  indent: 4
+MD030:
+  ul_multi: 3
+  ol_multi: 2
+MD033: false
+MD035:
+  style: ---
