@@ -32,6 +32,12 @@ or introduce a special field like in the [Sort pages example](https://lume.land/
 - `title`: not directly required, just a convention
 - `basename`: <https://lume.land/docs/advanced/the-data-model/>
 
+## Deno
+
+- `deno task` in `launch.json` results in a run
+    but no debugger attachment happens –
+    only the “bare” `deno run` should be used
+
 ## formatting
 
 According to cursory read of <https://github.com/prettier/prettier/issues/15141>
