@@ -1,0 +1,7 @@
+extends: ../.markdownlint.yaml
+# Artificially splitting paragraphs breaks copy-pasting
+# between the code editor and the two-language text editor
+# (the latter sometimes turns split paragraphs
+# into multiple separate paragraphs or sometimes
+# glues them directly, without even adding a space).
+line-length: false

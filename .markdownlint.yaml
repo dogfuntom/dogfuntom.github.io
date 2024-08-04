@@ -14,3 +14,10 @@ MD030:
 MD033: false
 MD035:
   style: ---
+
+# Fixes (these were missing in the source, likely mistakenly):
+emphasis-style:
+  style: asterisk
+
+# Changes (local adjustments specific to this project):
+first-line-heading: false # (in Lume, a "missing" title is usually just inherited from parent data)
