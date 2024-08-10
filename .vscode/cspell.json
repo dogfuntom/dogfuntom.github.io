@@ -1,0 +1,23 @@
+{
+  "languageSettings": [
+    {
+      "languageId": "CSS",
+      "dictionaries": [
+        "fullstack"
+      ]
+    },
+    {
+      "languageId": "YAML",
+      "dictionaries": [
+        "software-terms"
+      ]
+    },
+    {
+      "languageId": "Markdown",
+      "dictionaries": [
+        "software-terms",
+        "web-services"
+      ]
+    }
+  ]
+}

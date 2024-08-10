@@ -5,10 +5,27 @@
   "[vento]": {
     "editor.defaultFormatter": "dprint.dprint"
   },
+  "cSpell.enableFiletypes": [
+    "vento"
+  ],
   "cSpell.language": "en,ru",
+  "cSpell.languageSettings": [
+    {
+      "dictionaries": [
+        "html",
+        "fonts",
+        "typescript",
+        "css"
+      ],
+      "languageId": "vento"
+    }
+  ],
   "cSpell.words": [
+    "deno",
     "lume",
-    "oklab"
+    "markdownlint",
+    "multilanguage",
+    "vento"
   ],
   "deno.enable": true,
   "deno.lint": true,
