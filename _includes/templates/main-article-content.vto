@@ -6,6 +6,12 @@
     {{- /if }}
   </hgroup>
 </header>
+{{ if it['tl;dr'] }}
+<details>
+  <summary>tl;dr</summary>
+  {{ it['tl;dr'] |> md }}
+</details>
+{{ /if }}
 {{ content }}
 {{ if dl || address || client }}
   <section>

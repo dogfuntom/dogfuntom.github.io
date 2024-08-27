@@ -1,0 +1,16 @@
+details {
+  outline-offset: 0.5em;
+
+  &[open] {
+    outline-style: ridge;
+    outline-width: thin;
+
+    summary {
+      text-transform: uppercase;
+    }
+  }
+
+  summary {
+    font-family: monospace;
+  }
+}
