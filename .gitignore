@@ -143,3 +143,7 @@ _non-repo
 
 # Output folder
 _site
+
+# It is not a good idea to have tsconfig.json in a Deno project: https://docs.deno.com/runtime/manual/advanced/typescript/configuration/#what-an-implied-tsconfig.json-looks-like
+# (This entry is here only to serve as a reminder of that.)
+[jt]config.json
