@@ -1,5 +1,23 @@
 # implementation notes
 
+## favicon
+
+### no root
+
+There's intentionally no favicon.ico at root –
+precisely to prevent the associated fallback mechanism.
+This is because of the nature of user website and project websites at GitHub Pages.
+Since the latter end up in subdirectory,
+if something is ever misconfigured with their favicons,
+the fallback to former's favicon will happen.
+But surely irrelevant favicon is worse than no favicon at all.
+
+### size
+
+A small ICO is enough – vector or large icons are needed for pinning
+to Home Screen or Start or something analogous –
+and it doesn't make much sense to pin a portfolio website in such a way.
+
 ## Lume
 
 Lume won't accept year-month dates (day of the month is required)

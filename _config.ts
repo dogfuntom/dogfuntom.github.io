@@ -8,8 +8,12 @@ const markdown = {
 
 const site = lume({}, { markdown })
 
+// Copy the "img" directory to _site/images
+site.copy('img', 'images')
+// Copy the content of "assets" directory to the root
 site.copy('assets', '.')
 
+site.ignore('/docs/')
 site.ignore('README.md')
 
 export default site
