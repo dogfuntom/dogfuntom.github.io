@@ -51,6 +51,7 @@ or introduce a special field like in the [Sort pages example](https://lume.land/
 -   `deno task` in `launch.json` results in a run
     but no debugger attachment happens –
     only the “bare” `deno run` should be used
+-   `deno … --allow-run` permission is needed for Nav plugin <https://github.com/lumeland/lume.land/issues/133>
 
 ## formatting
 
