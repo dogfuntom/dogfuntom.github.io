@@ -1,15 +1,16 @@
 # Maxim Kamalov's portfolio
 
-This is the source of my portfolio website.
+## [implementation](./implementation.md)
 
-Basically, it works like this:
-
-Handy to edit source (markup, content, template).\
-↓\
-Processing by running Lume (using Deno to run Lume).\
-↓\
-The publishable result at `gh-pages` branch (pushed manually).
-
-The website itself is also intended to be a portfolio item to some degree
-and show one small part of my tastes in both under-the-hood
-and exterior sides of web design.
+```mermaid
+sequenceDiagram
+    participant Lume as Lume<br/>run via Deno
+    actor me as developer
+    participant gh as GitHub Pages<br/>via gh-pages branch
+    me->>+Lume: HTML templates<br/>written in Vento
+    me->>Lume: texts/posts<br/>written in Markdown
+    me-->>Lume: CSS<br/>copied as is, not processed
+    Lume->>-me: static website
+    me->>gh: static website
+    note over me,gh: pushed manually a.t.m.<br/>(good enough for now)
+```
