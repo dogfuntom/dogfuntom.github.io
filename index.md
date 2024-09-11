@@ -1,9 +1,11 @@
 ---
 layout: layouts/home.vto
-title: Maxim Kamalov's portfolio
+title: Maxim Kamalov’s portfolio
 description: home page
 id: homepage
 ---
+
+# Maxim Kamalov’s portfolio
 
 I'm a Unity programmer and a web programmer.
 And a bit of a technical artist – specifically, shaders, Blender, etc.
