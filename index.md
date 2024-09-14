@@ -1,4 +1,5 @@
 ---
+layout: layouts/home.vto
 title: Maxim Kamalov's portfolio
 description: home page
 id: homepage
