@@ -7,6 +7,11 @@
     <header>
       {{- set primary_navigation_id = "primary-navigation" }}
       {{ include "templates/header-jump-to-menu.vto" { primary_navigation_id } -}}
+      <nav aria-labelledby="pagefind">
+        <h2 id="pagefind" hidden>search</h2>
+        {{#- Insert the search component here: #}}
+        <div id="search"></div>
+      </nav>
       {{ include "templates/navigation.vto" { id: primary_navigation_id } -}}
     </header>
     <main>
