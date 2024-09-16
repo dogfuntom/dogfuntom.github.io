@@ -1,0 +1,20 @@
+body {
+  animation-name: bg;
+  animation-delay: -222s;
+  animation-duration: 444s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes bg {
+  from {
+    /* anything smaller jumps too visibly
+      (also flashes too much for any "valid" duration,
+      where "valid" means it doesn't cause visible FPS stutter) */
+    background-size: 32px 32px;
+  }
+  to {
+    background-size: 64px 64px;
+  }
+}
