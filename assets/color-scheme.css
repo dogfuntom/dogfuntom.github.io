@@ -1,18 +1,53 @@
-html {
-  --background: #ffffff;
-  --foreground: #3b3b3b;
+/* Contrast is ensured using https://snook.ca/technical/colour_contrast/colour.htm. */
+body {
+  background-color: color-mix(in srgb, whitesmoke 12.5%, white);
+  color: color-mix(in srgb, dimgray 75%, black);
+}
+
+/* Firefox makes h1 inside article undistinguishable from h2.
+  So, it may be a good idea to increase contrast for such h1 (and decorate it in other ways too). */
+:is(article, aside, nav, section) h1 {
+  color: black;
 }
 
 @media (prefers-color-scheme: dark) {
-  html {
-    --background: #1f1f1f;
-    --foreground: #cccccc;
+  body {
+    background-color: color-mix(in srgb, dimgray 25%, black);
+    color: lightgray;
   }
+
+  :is(article, aside, nav, section) h1 {
+    color: white;
+  }
+
   a:link {
-    color: #58a6ff;
+    color: color-mix(in srgb, dodgerblue, white);
   }
 
   a:visited {
-    color: #8e96f0;
+    color: color-mix(in srgb, blueviolet, white);
+  }
+}
+
+@media (prefers-contrast: no-preference), (prefers-contrast: less) {
+  body {
+    --opacity: 6.25%;
+    background-image: repeating-radial-gradient(
+      color-mix(in srgb, currentcolor var(--opacity), transparent) 12%,
+      transparent 13%
+    );
+
+    /* any in [3px, 64px] seem to be good-looking */
+    --background-size: calc((3px + 64px) / 2);
+    background-size: var(--background-size) var(--background-size);
+
+    background-position: center;
+    background-attachment: fixed;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    body {
+      --opacity: 25%;
+    }
   }
 }
