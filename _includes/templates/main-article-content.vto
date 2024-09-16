@@ -7,7 +7,7 @@
   </hgroup>
 </header>
 {{ content }}
-{{ if dl || address }}
+{{ if dl || address || client }}
   <section>
     <h2>info</h2>
     <dl>
@@ -15,6 +15,10 @@
         <dt>link:</dt>
         {{#- "bare" URI is probably justified in this situation #}}
         <dd><a title="the URL address of the result of this project" href="{{ address }}">{{ address }}</a></dd>
+      {{ /if }}
+      {{ if client }}
+        <dt>client:</dt>
+        <dd data-pagefind-filter="client">{{ client }}</dd>
       {{ /if }}
       {{ for kv of Object.entries(dl) }}
         <dt>{{ kv[0] }}:</dt>
