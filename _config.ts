@@ -21,6 +21,18 @@ site.copy('assets', '.')
 
 site.ignore('docs')
 
+site.preprocess(['.md'], (pages) => {
+  const startName = 'start'
+  const endName = 'end'
+  for (const page of pages) {
+    // Use end date as date (which in turn may be used for sorting).
+    let date = new Date(page.data[endName])
+    // (Also, fallback to start.)
+    if (!date.valueOf()) date = new Date(page.data[startName])
+    if (date.valueOf()) page.data.date = date
+  }
+})
+
 function handleLanguages() {
   // "Convert" lang suffix into lang in data.
   site.parseBasename((basename) => {
