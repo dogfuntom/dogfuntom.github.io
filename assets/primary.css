@@ -1,23 +1,4 @@
 html {
-  --background: #ffffff;
-  --foreground: #3b3b3b;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    --background: #1f1f1f;
-    --foreground: #cccccc;
-  }
-  a:link {
-    color: #58a6ff;
-  }
-
-  a:visited {
-    color: #8e96f0;
-  }
-}
-
-html {
   max-width: 83ch;
   padding: 3em 1em;
   margin: auto;

@@ -1,8 +1,14 @@
 <meta charset="utf-8" />
 <title>{{ title }}</title>
-<link href="/primary.css" rel="stylesheet" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 {{ if description -}}
   <meta name="description" content="{{ description }}" />
 {{- /if }}
 <link rel="icon" href="/images/favicon.ico" />
+
+<link href="/primary.css" rel="stylesheet" />
+<link
+  href="/color-scheme.css"
+  rel="stylesheet"
+  media="screen and (color) and (color-index: 0) and (grid: 0) and (monochrome: 0)"
+/>
