@@ -24,6 +24,13 @@ html {
 body {
   background: var(--background);
   color: var(--foreground);
+  /* inspired by: https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements/Features/Limiting_content_width */
+  max-width: 80ch;
+
+  /* inspired by: https://thoughtmight.com/tutorial/109-bytes-css-website-looks-great/ */
+  padding: 1em;
+
+  margin: auto;
 }
 
 h1,
@@ -53,7 +60,8 @@ h1 {
 p,
 ul,
 ol {
-  margin-bottom: 2em;
+  /* inspired by: https://www.w3.org/WAI/WCAG21/Techniques/general/G188 */
+  margin-block-end: 2em;
 }
 
 hgroup {
