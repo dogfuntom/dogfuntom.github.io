@@ -1,0 +1,15 @@
+id: LOCO
+title: LOCO Railroad Simulator
+subhead: game/app somewhere in between railroad simulator and model railroad simulator
+address: https://store.steampowered.com/app/1091240/LOCO_Railroad/
+dl:
+  stack: [Unity, HDRP]
+  skills: [custom physics, technical artistry, PCG, .NET, C#]
+  role: solo programming & technical artistry
+  billing: hourly
+client: Woj
+# start: 2018-09
+# end: 2021-09
+# There may be a mistake in months, so I shall double-check them later.
+start: 2018
+end: 2021

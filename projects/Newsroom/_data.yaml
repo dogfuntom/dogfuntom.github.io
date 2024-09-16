@@ -1,0 +1,14 @@
+id: Newsroom
+title: Newsroom (text-to-news-video app)
+address: https://newsroom.itch.io
+dl:
+  stack: [Unreal Engine, MetaHuman, C++]
+  skills:
+    - Blueprint
+    - Movie Render Queue in Runtime
+    - Building UE from Source
+  billing: hourly without escrow
+  role: solo programming & technical artistry
+client: Woj
+start: 2022-03-05
+end: 2022-07-29

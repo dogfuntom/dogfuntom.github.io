@@ -1,0 +1,24 @@
+title: &t REEE (REcommendation Engine Extension)
+id: *t
+address: https://addons.mozilla.org/en-US/firefox/addon/recommendationengine/
+dl:
+  stack:
+    [WebExtension, Ethereum, Binance, REST, Express, PostgreSQL, DigitalOcean]
+  skills:
+    [
+      Firefox,
+      Chrome,
+      Chromium,
+      HTML,
+      CSS,
+      JS,
+      ERC20,
+      App Platform,
+      MetaMask,
+      JSON-RPC,
+    ]
+  billing: hourly without escrow
+  role: developing everything outside of the video recommendation engine itself
+start: 2021-09
+end: 2022-01
+client: Woj

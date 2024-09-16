@@ -1,0 +1,12 @@
+id: &id City 2048 and Evolution 2048
+title: *id
+subhead: a couple of nearly identical isometric mobile games in 2048 genre
+address: https://play.google.com/store/apps/dev?id=8759329978782207880
+dl:
+  stack: [Unity, Android]
+  skills: [2D]
+  billing: hourly
+  role: solo programming (with the exception of a couple of small scripts reused from the client’s previous projects, probably written by himself)
+start: 2017-03
+end: 2018-03
+client: Nenoff

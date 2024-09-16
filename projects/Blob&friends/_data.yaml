@@ -1,0 +1,9 @@
+title: &t Blob&friends (drawing app for kids)
+id: *t
+dl:
+  stack: [Unity, Android]
+  skills: [2D]
+  role: solo programming
+  billing: fixed payment
+start: 2018-01
+end: 2018-08

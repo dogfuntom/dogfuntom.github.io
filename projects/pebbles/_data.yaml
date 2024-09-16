@@ -1,0 +1,19 @@
+id: &id pebble generator
+title: *id
+dl:
+  hours: 195
+  stack: [Unity, iOS]
+  skills:
+    - URP
+    - C#
+    - Shader Graph
+    - PCG in runtime
+    - Unity as a Library
+    - React Native
+  role: solo programming
+  billing: hourly without escrow
+# start: 2022-11
+# end: 2023-03
+# There may be a mistake in months, so I shall double-check them later.
+start: 2022
+end: 2023

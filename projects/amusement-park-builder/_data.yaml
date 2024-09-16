@@ -1,0 +1,10 @@
+id: &id amusement park builder clicker mobile game
+title: *id
+subhead: a discarded experiment
+dl:
+  stack: [Unity]
+  skills: [2D]
+  billing: hourly
+start: 2016-03
+end: 2017-03
+client: Nenoff

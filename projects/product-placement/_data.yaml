@@ -1,0 +1,10 @@
+id: &id virtual product placement
+title: *id
+subhead: internal tool for Under Armour, Inc.
+dl:
+  hours: 14
+  stack: [Babylon.js, React.js]
+  skills: [HTML, CSS, JavaScript, web]
+  billing: hourly without escrow
+start: 2021-04-24
+end: 2021-05-18

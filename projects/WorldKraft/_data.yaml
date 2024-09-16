@@ -1,0 +1,15 @@
+title: &t WorldKraft (voxel editor app)
+id: *t
+address: https://www.youtube.com/@worldkraft7662
+dl:
+  stack: [Unity]
+  skills: [ShaderLab, algorithms, data structures, technical artistry]
+  role: solo programming
+  billing: hourly
+start: 2015-02
+end: 2016-02
+client: Woj
+
+# about hours: less than 399
+# We did projects in parallel and tracked them in a single “pile” of hours.
+# I too used only the escrow's software for tracking time. A lack of personal analytics that I regret now.
