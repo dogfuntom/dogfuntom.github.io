@@ -7,3 +7,19 @@
   </hgroup>
 </header>
 {{ content }}
+{{ if dl || address }}
+  <section>
+    <h2>info</h2>
+    <dl>
+      {{ if address }}
+        <dt>link:</dt>
+        {{#- "bare" URI is probably justified in this situation #}}
+        <dd><a title="the URL address of the result of this project" href="{{ address }}">{{ address }}</a></dd>
+      {{ /if }}
+      {{ for kv of Object.entries(dl) }}
+        <dt>{{ kv[0] }}:</dt>
+        <dd>{{ [].concat(kv[1]).join(', ') }}</dd>
+      {{ /for }}
+    </dl>
+  </section>
+{{ /if }}
