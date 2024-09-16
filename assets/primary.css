@@ -29,6 +29,33 @@ body {
   padding: 1em;
 
   margin: auto;
+
+  /* inspired by: https://developer.mozilla.org/en-US/docs/Web/CSS/line-height */
+  line-height: 1.5;
+
+  --font-family:
+    /* inspired by: https://react.fluentui.dev/?path=/docs/theme-fonts--pag
+    see also: https://fluent2.microsoft.design/typography */ "Segoe UI",
+    "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", sans-serif,
+    /* a relatively popular snippet of unknown origin */ "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  font-family: var(--font-family);
+}
+
+main {
+  /* If we assume the almost universal PC font size of 16px,
+    then we can do 1.5em in order to get 18pt,
+    which is mentioned by WCAG, and can be loosely interpreted as a recommendation.
+    Simultaneously, x-large is (usually) 1.5em.
+    But, if the user already has the font-size customized,
+    it can be annoying to see it scaled,
+    so hopefully it's a good idea to limit our "intrusion" to <main> section only. */
+  font-size: x-large;
+  /* the first is basically Frutiger-like;
+    the second is described here: https://en.wikipedia.org/wiki/Constantia_(typeface)#Features */
+  font-family: Corbel, Constantia,  var(--font-family);
 }
 
 h1,
@@ -78,4 +105,8 @@ hgroup {
   > h1 + p {
     display: inline;
   }
+}
+
+main {
+  text-rendering: optimizeLegibility;
 }
