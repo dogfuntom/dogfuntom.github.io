@@ -5,13 +5,11 @@
   </head>
   <body>
     <header>
-      {{ include "templates/header-jump-to-menu.vto" }}
+      {{ include "templates/header-jump-to-menu.vto" -}}
       <h1>{{ title }}</h1>
     </header>
     <main>
-      <article>
-        {{ content }}
-      </article>
+      <article>{{ include "templates/main-article-content.vto" }}</article>
     </main>
     <footer>
       {{ include "templates/navigation.vto" { id: primary_navigation_id } -}}
