@@ -1,21 +1,20 @@
 {
-  "deno.enable": true,
-  "deno.unstable": true,
-  "deno.lint": true,
-  "editor.formatOnSave": true,
-  "editor.defaultFormatter": "denoland.vscode-deno",
+  "[markdown]": {
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
   "cSpell.language": "en,ru",
-  "markdown.occurrencesHighlight.enabled": true,
-  "markdown.validate.enabled": true,
-  "markdown.preferredMdPathExtensionStyle": "removeExtension",
-  "markdown.preview.typographer": true,
-  "markdown.updateLinksOnFileMove.enabled": "prompt",
-  "markdown.validate.fileLinks.enabled": "ignore",
   "cSpell.words": [
     "lume",
     "oklab"
   ],
-  "[markdown]": {
-    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
-  }
+  "deno.enable": true,
+  "deno.lint": true,
+  "editor.defaultFormatter": "denoland.vscode-deno",
+  "editor.formatOnSave": true,
+  "markdown.occurrencesHighlight.enabled": true,
+  "markdown.preferredMdPathExtensionStyle": "removeExtension",
+  "markdown.preview.typographer": true,
+  "markdown.updateLinksOnFileMove.enabled": "prompt",
+  "markdown.validate.enabled": true,
+  "markdown.validate.fileLinks.enabled": "ignore"
 }
