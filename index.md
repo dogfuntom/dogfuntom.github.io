@@ -1,6 +1,7 @@
 ---
 title: Maxim Kamalov's portfolio
 description: home page
+id: homepage
 ---
 
 This website contains postmortem-like descriptions of projects that I participated in development of.
