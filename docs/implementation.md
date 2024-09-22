@@ -62,3 +62,13 @@ and this bug is not fixed for months even after the “how” of the fix was “
 This makes it a clearly poor fit for `node_modules`-free project.
 (While it’s possible to contribute on this,
 it’s not cost-effective due to abundance of alternatives.)
+
+## CSS
+
+-   LinkText and VisitedText don’t work in Edge (are the same color)
+-   `max-width`: `83ch` (the initial commit value) –
+    this was my inattentive reading of
+    [Popular sites with limited width](https://www.mediawiki.org/wiki/Reading/Web/Desktop_Improvements/Features/Limiting_content_width#Popular_sites_with_limited_width):
+    this is the middle between WHO Cyrillic and someone else’s Latin
+    but this fails to take into account that
+    WHO itself actually has bigger number for Latin than for Cyrillic
