@@ -1,0 +1,18 @@
+{{ function listItemContent(item) }}
+  {{- if item.data -}}
+    <a href="{{ item.data.url }}">{{ item.data.title }}</a>
+  {{- /if -}}
+  {{- if item.children -}}
+    <ul>
+      {{- for child of item.children -}}
+        <li>{{ listItemContent(child) }}</li>
+      {{- /for -}}
+    </ul>
+  {{- /if -}}
+{{ /function -}}
+
+<menu>
+  {{- for item of nav_menu.children }}
+    <li>{{ listItemContent(item) }}</li>
+  {{- /for }}
+</menu>

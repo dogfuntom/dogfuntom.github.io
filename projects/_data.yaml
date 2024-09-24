@@ -1,0 +1,3 @@
+# Note that this undoing of basename can only be here,
+# it can't be moved to the parent directory.
+basename: ''

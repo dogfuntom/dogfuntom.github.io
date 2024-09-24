@@ -1,6 +1,7 @@
 import lume from 'lume/mod.ts'
 import abbr from 'npm:markdown-it-abbr'
 import multilanguage from 'lume/plugins/multilanguage.ts'
+import nav from 'lume/plugins/nav.ts'
 
 // Set the markdown plugins
 const markdown = {
@@ -10,6 +11,8 @@ const markdown = {
 const site = lume({}, { markdown })
 
 handleLanguages()
+
+site.use(nav())
 
 // Copy the "img" directory to _site/images
 site.copy('img', 'images')

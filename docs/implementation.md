@@ -18,6 +18,20 @@ A small ICO is enough – vector or large icons are needed for pinning
 to Home Screen or Start or something analogous –
 and it doesn't make much sense to pin a portfolio website in such a way.
 
+## HTML, Vento
+
+> A header element is intended to usually contain a heading
+> (an h1–h6 element or an hgroup element), but this is not required.
+>
+> — <https://html.spec.whatwg.org/multipage/sections.html#the-header-element>
+
+-   Vento fails to parse template inclusion
+    if there's a line-break between the keyword and the path string –
+    `{{ include ␤ "foo/bar.vto" }}`
+-   Vento can't call function before it's defined –
+    a.k.a. forward reference –
+    i.e. there's no hoisting
+
 ## Lume
 
 Lume won't accept year-month dates (day of the month is required)
@@ -34,7 +48,7 @@ or introduce a special field like in the [Sort pages example](https://lume.land/
 
 ## Deno
 
-- `deno task` in `launch.json` results in a run
+-   `deno task` in `launch.json` results in a run
     but no debugger attachment happens –
     only the “bare” `deno run` should be used
 

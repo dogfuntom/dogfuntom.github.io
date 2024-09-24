@@ -5,6 +5,7 @@
   </head>
   <body>
     <header>
+      {{ include "templates/header-jump-to-menu.vto" }}
       <h1>{{ title }}</h1>
     </header>
     <main>
@@ -12,5 +13,8 @@
         {{ content }}
       </article>
     </main>
+    <footer>
+      {{ include "templates/navigation.vto" { id: primary_navigation_id } -}}
+    </footer>
   </body>
 </html>
