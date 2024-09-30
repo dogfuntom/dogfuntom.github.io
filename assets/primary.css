@@ -27,22 +27,49 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 3em 0 1em;
+hgroup {
+  /* loosely inspired by: https://dev.to/swyx/100-bytes-of-css-to-look-great-everywhere-19pd */
+  margin-block: 2.5rem 1.5rem;
+
+  /* enforce fancier headers */
+  font-variant-ligatures: common-ligatures discretionary-ligatures contextual;
 }
 
 h1,
 h2,
 h3 {
+  /* a somewhat popular "snippet"
+  (though usually it covers all levels; but also sometimes only h1 and h2) */
   line-height: 1.2;
 }
 
+h1 {
+  /* px seems to "handle" font-size changes better than em here, counterintuitively */
+  text-shadow: -8px -8px 1px
+    color-mix(in srgb, currentColor 12.5%, transparent);
+}
+
+/* see also: https://www.w3.org/WAI/WCAG21/Techniques/general/G188 */
 p,
 ul,
 ol {
   margin-bottom: 2em;
+}
+
+hgroup {
+  > p {
+    font-weight: lighter;
+    line-height: initial;
+  }
+
+  > * {
+    margin-block: 0;
+  }
+
+  /* while this can be done via flex instead,
+    inlining works just as fine (if not better) */
+  > h1,
+  > h1 + p {
+    display: inline;
+  }
 }
