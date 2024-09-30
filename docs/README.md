@@ -1,4 +1,4 @@
-# Maxim Kamalov's portfolio
+# Maxim Kamalov’s portfolio
 
 ## [implementation](./implementation.md)
 

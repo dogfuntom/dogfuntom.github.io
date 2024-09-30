@@ -4,12 +4,12 @@
 
 ### no root
 
-There's intentionally no favicon.ico at root –
+There’s intentionally no favicon.ico at root –
 precisely to prevent the associated fallback mechanism.
 This is because of the nature of user website and project websites at GitHub Pages.
 Since the latter end up in subdirectory,
 if something is ever misconfigured with their favicons,
-the fallback to former's favicon will happen.
+the fallback to former’s favicon will happen.
 But surely irrelevant favicon is worse than no favicon at all.
 
 ### size
@@ -26,11 +26,11 @@ and it doesn't make much sense to pin a portfolio website in such a way.
 > — <https://html.spec.whatwg.org/multipage/sections.html#the-header-element>
 
 -   Vento fails to parse template inclusion
-    if there's a line-break between the keyword and the path string –
+    if there’s a line-break between the keyword and the path string –
     `{{ include ␤ "foo/bar.vto" }}`
--   Vento can't call function before it's defined –
+-   Vento can't call function before it’s defined –
     a.k.a. forward reference –
-    i.e. there's no hoisting
+    i.e. there’s no hoisting
 
 ## Lume
 
@@ -59,5 +59,5 @@ Prettier can't use global plugins for the second time in its history
 and this bug is not fixed for months even after the “how” of the fix was “revealed”.
 
 This makes it a clearly poor fit for `node_modules`-free project.
-(While it's possible to contribute on this,
-it's not cost-effective due to abundance of alternatives.)
+(While it’s possible to contribute on this,
+it’s not cost-effective due to abundance of alternatives.)
