@@ -13,3 +13,13 @@ or introduce a special field like in the [Sort pages example](https://lume.land/
 - `id`: only some plugins (`multilanguage`, etc.) require it
 - `title`: not directly required, just a convention
 - `basename`: <https://lume.land/docs/advanced/the-data-model/>
+
+## formatting
+
+According to cursory read of <https://github.com/prettier/prettier/issues/15141>
+Prettier can't use global plugins for the second time in its history
+and this bug is not fixed for months even after the “how” of the fix was “revealed”.
+
+This makes it a clearly poor fit for `node_modules`-free project.
+(While it's possible to contribute on this,
+it's not cost-effective due to abundance of alternatives.)

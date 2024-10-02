@@ -2,6 +2,9 @@
   "[markdown]": {
     "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
   },
+  "[vento]": {
+    "editor.defaultFormatter": "dprint.dprint"
+  },
   "cSpell.language": "en,ru",
   "cSpell.words": [
     "lume",

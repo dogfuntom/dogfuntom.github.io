@@ -1,0 +1,15 @@
+{
+  "excludes": [
+    "**/node_modules",
+    "**/*-lock.json"
+  ],
+  "typescript": {
+    "semiColons": "asi",
+    "quoteStyle": "preferSingle",
+    "quoteProps": "preserve",
+    "functionDeclaration.spaceBeforeParentheses": true
+  },
+  "plugins": [
+    "https://plugins.dprint.dev/g-plane/markup_fmt-v0.13.1.wasm"
+  ]
+}
