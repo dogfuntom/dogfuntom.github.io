@@ -1,29 +1,29 @@
 {
-	"version": "2.0.0",
-	"tasks": [
-		{
-			"type": "deno",
-			"command": "task",
-      "args": [ "serve" ],
-			"problemMatcher": [
-				"$deno"
-			],
-			"label": "deno task: serve",
-			"detail": "deno task lume -s",
-		},
+  "version": "2.0.0",
+  "tasks": [
     {
-			"type": "deno",
-			"command": "task",
-      "args": [ "build" ],
-			"problemMatcher": [
-				"$deno"
-			],
-			"label": "deno task: build",
-			"detail": "deno task lume",
-			"group": {
-				"kind": "build",
-				"isDefault": true
-			}
-		}
-	]
+      "type": "deno",
+      "command": "task",
+      "args": ["serve"],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno task: serve",
+      "detail": "deno task lume -s"
+    },
+    {
+      "type": "deno",
+      "command": "task",
+      "args": ["build"],
+      "problemMatcher": [
+        "$deno"
+      ],
+      "label": "deno task: build",
+      "detail": "deno task lume",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
 }

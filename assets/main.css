@@ -9,11 +9,11 @@ html {
     --foreground: #cccccc;
   }
   a:link {
-    color: #58a6ff
+    color: #58a6ff;
   }
 
   a:visited {
-    color: #8e96f0
+    color: #8e96f0;
   }
 }
 
@@ -24,15 +24,20 @@ html {
   line-height: 1.75;
   font-size: 1.25em;
   font-family:
-    "Segoe UI Web (West European)", "Segoe UI",
+    "Segoe UI Web (West European)",
+    "Segoe UI",
     -apple-system,
     BlinkMacSystemFont,
     Roboto,
-    "Helvetica Neue", "Helvetica",
+    "Helvetica Neue",
+    "Helvetica",
     Arial,
     "Noto Sans",
     sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
 }
 
 body {
