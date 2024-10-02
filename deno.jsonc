@@ -1,11 +1,15 @@
 {
   "tasks": {
-    "lume": "echo \"import 'lume/cli.ts'\" | deno run --unstable -A -",
+    "lume": "echo \"import 'lume/cli.ts'\" | deno run -A -",
     "build": "deno task lume",
     "serve": "deno task lume -s"
   },
   "imports": {
-    "lume/": "https://deno.land/x/lume@v1.17.3/"
+    "@std/collections": "jsr:@std/collections@^1.0.5",
+    "lume/": "https://deno.land/x/lume@v2.3.0/"
+  },
+  "compilerOptions": {
+    "types": ["lume/types.ts"]
   },
   "fmt": {
     // inspired by JavaScript Standard Style

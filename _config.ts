@@ -4,7 +4,6 @@ import abbr from "npm:markdown-it-abbr";
 // Set the markdown plugins
 const markdown = {
   plugins: [abbr],
-  keepDefaultPlugins: true,
 };
 
 const site = lume({}, { markdown });

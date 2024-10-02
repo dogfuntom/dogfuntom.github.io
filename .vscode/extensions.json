@@ -1,6 +1,6 @@
 {
-    "recommendations": [
-        "denoland.vscode-deno",
-        "ronnidc.nunjucks"
-    ]
+  "recommendations": [
+    "denoland.vscode-deno",
+    "oscarotero.vento-syntax"
+  ]
 }
