@@ -4,13 +4,13 @@
 
 ```mermaid
 sequenceDiagram
-    participant Lume as Lume<br/>run via Deno
+    participant gh as GitHub Pages<br/>using Actions
+    participant Lume as Lume<br/>run with Deno
     actor me as developer
-    participant gh as GitHub Pages<br/>via gh-pages branch
     me->>+Lume: HTML templates<br/>written in Vento
     me->>Lume: texts/posts<br/>written in Markdown
-    me-->>Lume: CSS<br/>copied as is, not processed
+    me-->>Lume: CSS<br/>copied as is – not processed
     Lume->>-me: static website
-    me->>gh: static website
-    note over me,gh: pushed manually a.t.m.<br/>(good enough for now)
+    Lume->>gh: static website
+    note over Lume,gh: (workflow run)
 ```
