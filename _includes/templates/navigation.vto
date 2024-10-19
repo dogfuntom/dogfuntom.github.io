@@ -1,7 +1,7 @@
 {{#- inspired by: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav -#}}
-<nav aria-labelledby='{{ id }}'>
-  <h2 id='{{ id }}'>navigation</h2>
-  {{- set nav_menu = nav.menu('/', 'lang=' + lang, 'date') }}
-  <a href='{{ nav_menu.data.url }}'>{{ nav_menu.data.description }}</a>
+<nav aria-labelledby="{{ id }}">
+  <h2 id="{{ id }}">navigation</h2>
+  {{- set nav_menu = nav.menu('/', 'unlisted!=true lang=' + lang, 'date') }}
+  <a href="{{ nav_menu.data.url }}">{{ nav_menu.data.description }}</a>
   {{ include 'templates/menu.vto' { nav_menu } -}}
 </nav>
