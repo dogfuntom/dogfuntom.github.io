@@ -29,13 +29,12 @@ body {
   }
 }
 
-@media (prefers-contrast: no-preference), (prefers-contrast: less) {
+@media (prefers-contrast: no-preference),
+(prefers-contrast: less) {
   body {
     --opacity: 6.25%;
-    background-image: repeating-radial-gradient(
-      color-mix(in srgb, currentcolor var(--opacity), transparent) 12%,
-      transparent 13%
-    );
+    background-image: repeating-radial-gradient(color-mix(in srgb, currentcolor var(--opacity), transparent) 12%,
+        transparent 13%);
 
     /* any in [3px, 64px] seem to be good-looking */
     --background-size: calc((3px + 64px) / 2);

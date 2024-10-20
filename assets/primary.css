@@ -35,10 +35,12 @@ body {
 
   --font-family:
     /* inspired by: https://react.fluentui.dev/?path=/docs/theme-fonts--pag
-    see also: https://fluent2.microsoft.design/typography */ "Segoe UI",
+    see also: https://fluent2.microsoft.design/typography */
+    "Segoe UI",
     "Segoe UI Web (West European)", -apple-system, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", sans-serif,
-    /* a relatively popular snippet of unknown origin */ "Apple Color Emoji",
+    /* a relatively popular snippet of unknown origin */
+    "Apple Color Emoji",
     "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 
   font-family: var(--font-family);
@@ -55,7 +57,7 @@ main {
   font-size: x-large;
   /* the first is basically Frutiger-like;
     the second is described here: https://en.wikipedia.org/wiki/Constantia_(typeface)#Features */
-  font-family: Corbel, Constantia,  var(--font-family);
+  font-family: Corbel, Constantia, var(--font-family);
 }
 
 h1,
@@ -77,8 +79,7 @@ h3 {
 
 h1 {
   /* px seems to "handle" font-size changes better than em here, counterintuitively */
-  text-shadow: -8px -8px 1px
-    color-mix(in srgb, currentColor 12.5%, transparent);
+  text-shadow: -8px -8px 1px color-mix(in srgb, currentColor 12.5%, transparent);
 }
 
 /* see also: https://www.w3.org/WAI/WCAG21/Techniques/general/G188 */
@@ -90,19 +91,19 @@ ol {
 }
 
 hgroup {
-  > p {
+  >p {
     font-weight: lighter;
     line-height: initial;
   }
 
-  > * {
+  >* {
     margin-block: 0;
   }
 
   /* while this can be done via flex instead,
     inlining works just as fine (if not better) */
-  > h1,
-  > h1 + p {
+  >h1,
+  >h1+p {
     display: inline;
   }
 }
