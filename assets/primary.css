@@ -88,6 +88,11 @@ ul,
 ol {
   /* inspired by: https://www.w3.org/WAI/WCAG21/Techniques/general/G188 */
   margin-block-end: 2em;
+
+  ul,
+  ol {
+    margin-block-end: revert;
+}
 }
 
 hgroup {
