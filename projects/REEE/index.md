@@ -40,3 +40,21 @@ As a result, we [used eth_signTypedData_v4](https://github.com/dogfuntom/REEE/tr
 We published an alpha version of the extension for free and attempted to promote it on relevant social media groups/hashtags/subreddits. Of course, the aforementioned rewards were a part of our marketing strategy. After getting a disappointing number of users, we had to cancel the project.
 
 [token]: https://bscscan.com/token/0xb802e1d6bd40c1976d11d0cd462c04122ba33672#code
+
+<!--
+## draft/archive
+
+Some facts are not important enough to keep them in text.
+But still better keep them in a comment at least for archival purposes.
+
+Tokens:
+
+- [test](https://testnet.bscscan.com/token/0xbeae3549767b4bc739f5e20a447d12fc47a541d5#code)
+- [prototype](https://bscscan.com/token/0xb802e1d6bd40c1976d11d0cd462c04122ba33672#code)
+- [end result][token]
+
+Other facts:
+
+- Ethers or EthereumJS was used in rewarding backend but I don't remember which one we settled with
+- [some marketing](https://www.youtube.com/@reeereee278)
+-->
