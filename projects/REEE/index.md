@@ -6,10 +6,25 @@ To prove that our video recommendation extension sustains privacy and is trustwo
 
 ## implementation
 
-- front-end: Firefox and Chrome browser extensions; the format is WebExtension, which is almost the same as making a static HTML, CSS, JS website
-- cryptocurrency as the rewards: a typical ERC20 (fungible token) smart contract in Ethereum (more accurately, in Binance)
-- back-end for the reward system: REST server app (done using Express) and PostgreSQL database, both hosted on the *DigitalOcean App Platform*
-- MetaMask integration (Ethereum JSON-RPC)
+### frontend (the extension)
+
+At first we wanted to fork [youtube-watchmarker](https://github.com/sniklaus/youtube-watchmarker) that “asks” YouTube for user's watch history. Soon we figured out that for our use cases “asking” the browser is better.
+
+### blockchain, smart contract, fungible token
+
+At first, we created a [completely ordinary ERC20/BEP20 “currency”][token] by publishing onto the Binance's BNB Smart Chain a completely simple smart contract written in Solidity.
+
+Luckily, before we began using it we realized that there's a potential for easy yet huge cost optimization – one big operation is radically cheaper than many small ones. So, we added our own methods – wrappers that take arrays in place of single values and call the wrapped builtin methods in a loop.
+
+While at it, we figured that for transparency a simple import is better than dependency-free approach. After this change our [modifications are isolated and apparent](https://vscode.blockscan.com/56/0x41664b1316fceac8578801bd6eb130ef0cfbec69), and the rest is done by a [trustable third party](https://docs.openzeppelin.com/contracts/4.x/erc20) with conveniently proper distribution of code across files and folders.
+
+### backends
+
+#### MetaMask wallet
+
+At the time wallet standards were at their infancy and the wallets barely tried to aid establishing them. Thus, it wasn't possible to support a choice of wallets without half of code being hacks and workaround. Anyway, only MetaMask had both the popularity and the decent official documentation.
+
+As a result, we [used eth_signTypedData_v4](https://github.com/dogfuntom/REEE/tree/2f0ae9ebea3e416d53d8ad0c91d7e0ce380bd071/metaMaskPage).
 
 ## conclusion
 
