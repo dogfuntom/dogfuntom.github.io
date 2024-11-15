@@ -72,3 +72,32 @@ it’s not cost-effective due to abundance of alternatives.)
     this is the middle between WHO Cyrillic and someone else’s Latin
     but this fails to take into account that
     WHO itself actually has bigger number for Latin than for Cyrillic
+
+## Markdown
+
+### render PlantUML
+
+`markdown-it-plantuml-ex2` doesn’t work:
+
+-   nothing rendered but also there are no traces in resultant HTML either;
+    i.e. it successfully “eats up” the input but fails to output
+-   there’s a message “No diagram found” but:
+    - its of information type, not an exception, so no stack trace
+    - this very string is not in the repo/project (according to GitHub’s search)
+
+`markdown-it-plantuml` works.
+
+### include/inline/inject/insert text from another file
+
+`@nicco.io/markdown-it-import` works but:
+
+- no relative paths: even `.` is treated as the root of a project
+
+`markdown-it-import` doesn’t work:
+“The "path" argument must be of type string. Received undefined”
+(one possibility is it fails to get the current path).
+
+`MDX` would be overkill for this in an ideal world.
+In practice, it seems it would be more cost effective to use it
+instead of researching the plugins above.
+(Though maybe it would have a similar quantity of its own pitfalls.)

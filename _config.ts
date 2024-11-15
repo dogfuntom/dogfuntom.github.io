@@ -1,12 +1,14 @@
 import lume from 'lume/mod.ts'
 import abbr from 'npm:markdown-it-abbr'
+import { importPlugin } from 'npm:@nicco.io/markdown-it-import'
+import puml from 'npm:markdown-it-plantuml'
 import multilanguage from 'lume/plugins/multilanguage.ts'
 import nav from 'lume/plugins/nav.ts'
 import pagefind from 'lume/plugins/pagefind.ts'
 
 // Set the markdown plugins
 const markdown = {
-  plugins: [abbr],
+  plugins: [abbr, importPlugin, puml],
 }
 
 const site = lume({}, { markdown })
@@ -55,7 +57,7 @@ function handleLanguages() {
     multilanguage({
       languages: ['en', 'ru'], // Available languages
       defaultLanguage: 'en', // The default language
-    })
+    }),
   )
 }
 

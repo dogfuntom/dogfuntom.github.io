@@ -22,6 +22,12 @@
   ],
   "words": [
     "buildless",
-    "pagefind"
+    "nicco",
+    "pagefind",
+    "plantuml",
+    "puml"
+  ],
+  "enableFiletypes": [
+    "plantuml"
   ]
 }
