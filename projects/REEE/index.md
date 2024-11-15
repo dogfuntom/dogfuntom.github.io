@@ -2,7 +2,7 @@ Users share YouTube watch history with us and get video recommendations (what di
 
 ## transparency
 
-To prove that our video recommendation extension sustains privacy and is trustworthy, we opened most of the source (without license – in pedantic terminology, it’s *source available* instead of FOSS). Namely, the [frontend](https://github.com/dogfuntom/REEE) and the smart contract are buildless (no obfuscation, no minimization, no bundling) – i.e. former’s sources can be read in browser builtin tools and the latter’s – in BscScan.
+To prove that our video recommendation extension sustains privacy and is trustworthy, we made it [source-available](https://en.wikipedia.org/wiki/Source-available_software) ([without a license](https://choosealicense.com/no-permission/)). Furthermore, it’s [buildless](https://modern-web.dev/guides/going-buildless/getting-started/) – no obfuscation, no minimization, no bundling. Similarly, the smart contract is [audit-friendly](#blockchain-smart-contract-fungible-token).
 
 ## implementation
 
