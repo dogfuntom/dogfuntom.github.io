@@ -8,6 +8,10 @@ import pagefind from 'lume/plugins/pagefind.ts'
 
 // Set the markdown plugins
 const markdown = {
+  options: {
+    linkify: true,
+    typographer: true,
+  },
   plugins: [abbr, importPlugin, puml],
 }
 
