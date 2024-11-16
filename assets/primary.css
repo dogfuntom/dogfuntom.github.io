@@ -92,7 +92,7 @@ ol {
   ul,
   ol {
     margin-block-end: revert;
-}
+  }
 }
 
 hgroup {
@@ -119,4 +119,15 @@ nav {
 
 main {
   text-rendering: optimizeLegibility;
+}
+
+/* like a full-width (aka full-bleed) but without the need for `overflow-x: hidden`
+  source: https://css-tricks.com/full-width-containers-limited-width-parents/#aa-no-calc-needed */
+img {
+  width: 98vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -49vw;
+  margin-right: -49vw;
 }
