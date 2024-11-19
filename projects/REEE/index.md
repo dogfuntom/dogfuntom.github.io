@@ -22,7 +22,7 @@ While at it, we figured that for transparency a simple import is better than dep
 
 #### MetaMask wallet
 
-At the time wallet standards were at their infancy and the wallets barely tried to aid establishing them. Thus, it wasn't possible to support a choice of wallets without half of code being hacks and workaround. Anyway, only MetaMask had both the popularity and the decent official documentation.
+At the time wallet standards were at their infancy and the wallets hardly tried to cooperate in establishing them. Thus, it wasn't possible to support a choice of wallets without half of code being hacks and workarounds. Anyway, only MetaMask had both the popularity and the decent official documentation.
 
 As a result, we [used eth_signTypedData_v4](https://github.com/dogfuntom/REEE/tree/2f0ae9ebea3e416d53d8ad0c91d7e0ce380bd071/metaMaskPage).
 
