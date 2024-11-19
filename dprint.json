@@ -10,6 +10,6 @@
     "functionDeclaration.spaceBeforeParentheses": true
   },
   "plugins": [
-    "https://plugins.dprint.dev/g-plane/markup_fmt-v0.13.1.wasm"
+    "https://plugins.dprint.dev/g-plane/markup_fmt-v0.15.1.wasm"
   ]
 }
