@@ -6,6 +6,15 @@ To prove that our video recommendation extension sustains privacy and is trustwo
 
 ## implementation
 
+(There are links in the diagram – but they only work when viewed directly (<kbd><kbd>right-click</kbd>⇒<kbd><samp>Open Image in New Tab</samp></kbd></kbd> or anything analogous) – and also it's more convenient overall.)
+
+@import(_includes/reee.puml)
+
+Omitted in the diagram:
+
+- the thumbnails for video recommendations are requested client-side from YouTube itself
+- minimal internal desktop app to see a table with current statistics (.NET Windows Desktop Runtime – or, more specifically, WPF)
+
 ### frontend (the extension)
 
 At first we wanted to fork [youtube-watchmarker](https://github.com/sniklaus/youtube-watchmarker) that “asks” YouTube for user's watch history. Soon we figured out that for our use cases “asking” the browser is better.
@@ -29,3 +38,5 @@ As a result, we [used eth_signTypedData_v4](https://github.com/dogfuntom/REEE/tr
 ## conclusion
 
 We published an alpha version of the extension for free and attempted to promote it on relevant social media groups/hashtags/subreddits. Of course, the aforementioned rewards were a part of our marketing strategy. After getting a disappointing number of users, we had to cancel the project.
+
+[token]: https://bscscan.com/token/0xb802e1d6bd40c1976d11d0cd462c04122ba33672#code

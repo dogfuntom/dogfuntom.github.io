@@ -1,0 +1,58 @@
+@startuml REEE
+!include <C4/C4_Container>
+title REEE in context of ecosystem(s)
+
+Boundary(bro, "user’s Firefox or Chrome") {
+    ContainerDb_Ext(storage, "storage")
+    ContainerDb_Ext(history, "history")
+    Container(reee, "REcommendation Engine Extension",\
+        "buildless HTML, CSS, JS; WebExtension", "the front-end", $link="https://addons.mozilla.org/en-US/firefox/addon/recommendationengine/")
+
+    Rel(reee, storage, "stores user ID in", "sync", "(random – unique but private/anonymous)")
+    Rel(history, reee, "YouTube URLs", "search")
+
+    Container_Ext(mm, "MetaMask", $descr="crypto wallet")
+    Rel_Back(reee, mm, "(user’s) public address", "JSON-RPC")
+}
+
+Boundary(bsc, "BNB Smart Chain", $type = "Binance") {
+    ContainerQueue(crypto, "user’s (public) address", $descr="(analogous to a bank account)")
+
+    System_Boundary(address, "REEE coin", "address, block") {
+        Container(sc, "smart contract", "Solidity", $link="https://bscscan.com/token/0x41664b1316fceac8578801bd6eb130ef0cfbec69#code")
+        Container(coin, "coin", "fungible token", $link="https://bscscan.com/token/0x41664b1316fceac8578801bd6eb130ef0cfbec69")
+        ContainerDb(vault, "“reserve”", $descr="“stash” of coins not yet in circulation")
+
+        Rel(sc, coin, "defines", "BEP20")
+        Rel(sc, coin, "has private API for")
+        Rel(coin, vault, "minted into")
+        Rel_Back(crypto, address, "transfers REEE coins as reward for participation")
+    }
+}
+
+Boundary(ocean, "DigitalOcean App Platform") {
+    Container(backend, "rewarding backend", "Express, EthereumJS; Mocha, Chai, pg-mem")
+    ContainerDb(db, "database", "PostgreSQL", "anonymous user ID, number of vid. watches rewarded, number of vid. watches yet to reward for")
+    Rel(backend, db, "uses")
+}
+
+System(ml, "recommending backend", $type="ML, Python", $link="https://github.com/zabir-nabil/recommender-rest-api")
+Rel(reee, ml, "YouTube URLs", $descr="(pushes from history;\npulls recommended)")
+
+Person(customer, "user",\
+    "a consumer of YouTube videos (anonymous to us – no explicit registration, no username/password)")
+
+'omitted for "brevity"
+'System_Ext(yt, "YouTube")
+'Rel_Back(reee, yt, "thumbnails")
+
+Rel(customer, bro, "uses")
+Rel(customer, crypto, "owns")
+Rel(mm, crypto, "controls")
+
+Rel_Back(customer, reee, "recommends YouTube videos (& rewards for participation)")
+
+Rel(reee, backend, "userID, address, contribution-amount")
+
+' TIP: Rel_Neighbor fixes overly long arrows but must be used extremely sparingly
+@enduml
