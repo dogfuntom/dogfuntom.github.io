@@ -6,4 +6,4 @@ Seemingly the *Movie Render Queue in Runtime* provided everything needed for non
 
 The text is converted into speech using built-in *Windows TTS* (text-to-speech) capabilities. This audio is then analyzed using *Oculus Lipsync* technology to generate data on the facial motions of a person speaking. From this data, a lip-sync animation for a 3D model is created. Random movements, blinking, and other nonverbal motions are also blended into the animation to create a more realistic look.
 
-We published our early builds on itch.io and samples of generated video on YouTube. However, the response from prospective users was not particularly encouraging. Consequently, we were forced to stop the project.
+We published our early builds on [itch.io](https://newsroom.itch.io) and samples of generated video on YouTube. However, the response from prospective users was not particularly encouraging. Consequently, we were forced to stop the project.
