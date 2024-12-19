@@ -26,6 +26,8 @@
         <dt>client:</dt>
         <dd data-pagefind-filter="client">{{ client }}</dd>
       {{ /if }}
+      <dt>date:</dt>
+      <dd>{{ start }}&ndash;{{ end }}</dd>
       {{ for kv of Object.entries(dl) }}
         <dt>{{ kv[0] }}:</dt>
         <dd>{{ [].concat(kv[1]).join(', ') }}</dd>
