@@ -32,11 +32,13 @@ site.ignore('docs')
 site.preprocess(['.md'], (pages) => {
   const startName = 'start'
   const endName = 'end'
+  // Use period/range as date, which in turn may be used for sorting.
   for (const page of pages) {
-    // Use end date as date (which in turn may be used for sorting).
-    let date = new Date(page.data[endName])
-    // (Also, fallback to start.)
-    if (!date.valueOf()) date = new Date(page.data[startName])
+    // Try end date by default.
+    let date = new Date(String(page.data[endName]))
+    // Fallback to start date.
+    if (!date.valueOf()) date = new Date(String(page.data[startName]))
+    // Set only on success.
     if (date.valueOf()) page.data.date = date
   }
 })
